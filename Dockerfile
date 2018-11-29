@@ -1,8 +1,32 @@
-FROM ubuntu:14.04
+FROM php:7.2-apache
 
 MAINTAINER Orangehrm <samanthaj@orangehrm.com>
 
-RUN apt-get update
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        apt-transport-https \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libmcrypt-dev \
+        libpng-dev \
+        libxml2-dev \
+        libicu-dev \
+        libpq-dev \
+        gnupg2 \
+        nano \
+        wget \
+        openssl \
+        locales \
+        git \
+    && docker-php-ext-install -j$(nproc) xmlrpc \
+        zip \
+        intl \
+        soap \
+        opcache \
+        pdo_mysql \
+        mysqli \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd
+
 
 # Install apache, PHP, and supplimentary programs. curl is for debugging the container.
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apache2 mysql-server libapache2-mod-php5 php5-mysql php5-gd php-pear php-apc php5-curl curl supervisor
