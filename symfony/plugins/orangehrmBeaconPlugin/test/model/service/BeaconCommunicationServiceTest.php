@@ -11,13 +11,13 @@
  *
  * @group beacon
  */
-class BeaconCommunicationServiceTest extends PHPUnit_Framework_TestCase {
+class BeaconCommunicationServiceTest extends PHPUnit\Framework\TestCase {
 
     protected $beaconCommunicationService;
     protected $beaconConfigService;
     protected $fixture;
 
-    public function setUp() {
+    public function setUp(): void {
         $this->beaconCommunicationService = new BeaconCommunicationsService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmBeaconPlugin/test/fixtures/BeaconDatapointService.yml';
         $this->beaconConfigService = $this->getMockBuilder('BeaconConfigService')->setMethods(array('setBeaconLock', 'getBeaconLock', 'getBeaconActivationAcceptanceStatus', 'getBeaconActivationStatus', 'getBeaconNextFlashTime', 'changeConfigTable', 'resolveNotificationMessages'))->getMock();

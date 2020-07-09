@@ -19,7 +19,7 @@
  *
  * @author samantha
  */
-class LeavePerformanceTest extends PHPUnit_Framework_TestCase{
+class LeavePerformanceTest extends PHPUnit\Framework\TestCase{
     
    
     

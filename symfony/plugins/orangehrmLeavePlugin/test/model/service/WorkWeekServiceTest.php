@@ -22,13 +22,13 @@
 /**
  * @group Leave 
  */
-class WorkWeekServiceTest extends PHPUnit_Framework_TestCase
+class WorkWeekServiceTest extends PHPUnit\Framework\TestCase
 {
 
     private $workWeekService;
     private $fixture;
 
-    protected function setUp()
+    protected function setUp() :void
     {
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/WorkWeekService.yml';
         $this->workWeekService	=	new WorkWeekService();

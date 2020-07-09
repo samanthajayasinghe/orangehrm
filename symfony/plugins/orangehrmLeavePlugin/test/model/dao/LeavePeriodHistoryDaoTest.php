@@ -25,11 +25,11 @@
  * @group Leave 
  */
 
-class LeavePeriodHistoryDaoTest extends PHPUnit_Framework_TestCase {
+class LeavePeriodHistoryDaoTest extends PHPUnit\Framework\TestCase {
     
     public $leavePeriodDao;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->leavePeriodDao = new LeavePeriodDao();
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeavePeriodHistoryDao.yml');

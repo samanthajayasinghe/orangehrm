@@ -10,7 +10,7 @@
  * @group performance
  * @author nadeera
  */
-class ReviewStatusFactoryTest extends PHPUnit_Framework_TestCase {
+class ReviewStatusFactoryTest extends PHPUnit\Framework\TestCase {
     
     
     public function testGetStatus1(){

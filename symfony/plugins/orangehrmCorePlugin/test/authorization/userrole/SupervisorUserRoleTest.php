@@ -22,7 +22,7 @@
  * Description of SupervisorUserRoleTest
  * @group Core
  */
-class SupervisorUserRoleTest extends PHPUnit_Framework_TestCase {
+class SupervisorUserRoleTest extends PHPUnit\Framework\TestCase {
 
     /** @property AdminUserRole $supervisorUserRole */
     private $supervisorUserRole;
@@ -30,7 +30,7 @@ class SupervisorUserRoleTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->supervisorUserRole = new SupervisorUserRole('Supervisor', new BasicUserRoleManager());
     }

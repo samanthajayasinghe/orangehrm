@@ -12,11 +12,11 @@
  * @author chathura
  * @group beacon
  */
-class BeaconNotificationServiceTest extends PHPUnit_Framework_TestCase {
+class BeaconNotificationServiceTest extends PHPUnit\Framework\TestCase {
     protected $beaconNotificationService;
     protected $fixture;
     
-    public function setUp() {
+    public function setUp(): void {
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmBeaconPlugin/test/fixtures/BeaconNotificationService.yml';
         $this->beaconNotificationService = new BeaconNotificationService();
         

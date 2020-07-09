@@ -25,7 +25,7 @@ class ReportableServiceTest {
 
     private $reportableService;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->reportableService = new ReportableService();
         TestDataService::truncateTables(array('Report', 'ReportGroup'));

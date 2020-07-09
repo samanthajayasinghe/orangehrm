@@ -19,7 +19,24 @@
 
     <testsuites>
         <testsuite name="All Tests">
-            <file>symfony/plugins/orangehrmAdminPlugin/test/model/service/CompanyStructureServiceTest.php</file>
+            <file>symfony/test/AppsOrangeHRMAllTests.php</file>
+            <file>symfony/plugins/orangehrmAdminPlugin/test/orangehrmAdminPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmAttendancePlugin/test/orangehrmAttendancePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmBeaconPlugin/test/orangehrmBeaconPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmCorePlugin/test/orangehrmCorePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmCoreWebServicePlugin/test/orangehrmCoreWebServicePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmCorporateDirectoryPlugin/test/orangehrmCorporateDirectoryPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmLeavePlugin/test/orangehrmLeavePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmMaintenancePlugin/test/orangehrmMaintenancePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmMarketPlacePlugin/test/orangehrmMarketPlacePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmOpenidAuthenticationPlugin/test/orangehrmOpenidAuthenticationPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmPerformancePlugin/test/orangehrmPerformancePluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmPerformanceTrackerPlugin/test/orangehrmPerformanceTrackerPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmPimPlugin/test/orangehrmPimPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmRecruitmentPlugin/test/orangehrmRecruitmentPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmRESTPlugin/test/orangehrmRESTPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmSecurityAuthenticationPlugin/test/orangehrmSecurityAuthenticationPluginAllTests.php</file>
+            <file>symfony/plugins/orangehrmTimePlugin/test/orangehrmTimePluginAllTests.php</file>
         </testsuite>
     </testsuites>
 

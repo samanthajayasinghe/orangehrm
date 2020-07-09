@@ -23,14 +23,14 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class LocalizationServiceTest extends PHPUnit_Framework_TestCase {
+class LocalizationServiceTest extends PHPUnit\Framework\TestCase {
 
     private $localizationService;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->localizationService = new LocalizationService();
     }
 

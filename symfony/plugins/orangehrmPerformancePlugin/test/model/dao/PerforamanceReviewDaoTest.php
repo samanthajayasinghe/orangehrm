@@ -14,9 +14,9 @@
 /**
  * @group performance
  */
-class PerforamanceReviewDaoTest extends PHPUnit_Framework_TestCase {
+class PerforamanceReviewDaoTest extends PHPUnit\Framework\TestCase {
 
-    protected function setUp() {
+    protected function setUp() :void {
         TestDataService::truncateTables(array('PerformanceReview', 'Employee'));
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmPerformancePlugin/test/fixtures/performance_reviews.yml');
     }

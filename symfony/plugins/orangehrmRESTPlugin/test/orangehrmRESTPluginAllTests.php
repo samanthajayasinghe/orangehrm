@@ -20,12 +20,12 @@
 class orangehrmRESTPluginAllTests
 {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
 
     public static function suite() {
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmRESTPluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmRESTPluginAllTest');
 
         /* HTTP test Cases */
 
@@ -77,7 +77,7 @@ class orangehrmRESTPluginAllTests
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 }
 

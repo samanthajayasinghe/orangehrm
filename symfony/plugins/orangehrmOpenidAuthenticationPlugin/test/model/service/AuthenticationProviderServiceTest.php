@@ -25,11 +25,11 @@
  * @group AuthenticationProvider
  * @group openidauth
  */
-class AuthenticationProviderServiceTest extends PHPUnit_Framework_TestCase {
+class AuthenticationProviderServiceTest extends PHPUnit\Framework\TestCase {
 
     private $authService;
 
-    protected function setUp() {
+    protected function setUp() :void {
         $this->authService = new AuthProviderExtraDetailsService();
     }
 

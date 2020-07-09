@@ -23,7 +23,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Recruitment
  */
-class CandidateHistoryServiceTest extends PHPUnit_Framework_TestCase {
+class CandidateHistoryServiceTest extends PHPUnit\Framework\TestCase {
 
     private $candidateHistoryService;
     protected $fixture;
@@ -31,7 +31,7 @@ class CandidateHistoryServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->candidateHistoryService = new CandidateHistoryService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmRecruitmentPlugin/test/fixtures/CandidateDao.yml';

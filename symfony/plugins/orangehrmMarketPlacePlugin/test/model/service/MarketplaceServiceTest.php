@@ -20,11 +20,11 @@
 /**
  * Class MarketplaceServiceTest
  */
-class MarketplaceServiceTest extends PHPUnit_Framework_TestCase
+class MarketplaceServiceTest extends PHPUnit\Framework\TestCase
 {
     private $marketplaceService;
 
-    public function setUp()
+    public function setup(): void
     {
         $this->marketplaceService = new MarketplaceService();
 

@@ -22,10 +22,10 @@
 /**
  * Description of LeaveMailerTest
  */
-class LeaveMailerTest extends PHPUnit_Framework_TestCase {
+class LeaveMailerTest extends PHPUnit\Framework\TestCase {
     protected $mailer;
     
-    protected function setUp() {
+    protected function setUp() :void {
         $this->mailer = new LeaveMailer();
     }
     

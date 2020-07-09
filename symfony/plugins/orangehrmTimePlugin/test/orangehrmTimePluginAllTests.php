@@ -19,13 +19,13 @@
  */
 class orangehrmTimePluginAllTests {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmTimePluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmTimePluginAllTest');
 
         /* Dao Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/TimesheetDaoTest.php');
@@ -50,7 +50,7 @@ class orangehrmTimePluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

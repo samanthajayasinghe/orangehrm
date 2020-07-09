@@ -23,14 +23,14 @@
  * Description of FIFOEntitlementConsumptionStrategyTest
  * @group Leave 
  */
-class FIFOEntitlementConsumptionStrategyTest extends PHPUnit_Framework_TestCase {
+class FIFOEntitlementConsumptionStrategyTest extends PHPUnit\Framework\TestCase {
 
     private $strategy;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->strategy = new FIFOEntitlementConsumptionStrategy();
 
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/FIFOEntitlementStrategy.yml';

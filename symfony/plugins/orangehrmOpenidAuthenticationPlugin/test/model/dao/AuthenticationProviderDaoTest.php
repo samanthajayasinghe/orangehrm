@@ -25,11 +25,11 @@
  * @group AuthenticationProvider
  * @group openidauth
  */
-class AuthenticationProviderDaoTest extends PHPUnit_Framework_TestCase {
+class AuthenticationProviderDaoTest extends PHPUnit\Framework\TestCase {
 
     private $authenticationDao;
     
-    protected function setUp() {
+    protected function setUp() :void {
         $this->authenticationDao = new AuthProviderExtraDetailsDao();
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmOpenidAuthenticationPlugin/test/fixtures/AuthenticationProviders.yml');
     }

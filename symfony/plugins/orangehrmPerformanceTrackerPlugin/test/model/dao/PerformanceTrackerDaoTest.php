@@ -21,7 +21,7 @@
 /**
  * @group PerformanceTracker
  */
-class PerformanceTrackerDaoTest extends PHPUnit_Framework_TestCase {
+class PerformanceTrackerDaoTest extends PHPUnit\Framework\TestCase {
 
     private $testCase;
     private $performanceTrackerDao;
@@ -30,7 +30,7 @@ class PerformanceTrackerDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->performanceTrackerDao = new PerformanceTrackerDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPerformanceTrackerPlugin/test/fixtures/PerformanceTrackerDao.yml';
         TestDataService::populate($this->fixture);

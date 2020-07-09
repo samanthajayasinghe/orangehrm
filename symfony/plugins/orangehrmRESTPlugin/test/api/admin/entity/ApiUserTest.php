@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Admin\Entity\User;
 
 
-class ApiUserTest extends PHPUnit_Framework_TestCase
+class ApiUserTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

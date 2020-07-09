@@ -6,14 +6,14 @@
  * ConfigService Test Class
  * @group Core
  */
-class ConfigServiceTest extends PHPUnit_Framework_TestCase {
+class ConfigServiceTest extends PHPUnit\Framework\TestCase {
 
     private $configService;
     
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->configService = new ConfigService();        
     }
     

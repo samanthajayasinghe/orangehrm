@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class SystemUserDaoTest extends PHPUnit_Framework_TestCase {
+class SystemUserDaoTest extends PHPUnit\Framework\TestCase {
     
         private $systemUserDao;
 	protected $fixture;
@@ -29,8 +29,8 @@ class SystemUserDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
-
+    protected function setUp() : void
+    {
 		$this->systemUserDao = new SystemUserDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/SystemUser.yml';
         TestDataService::truncateSpecificTables(array('SystemUser'));

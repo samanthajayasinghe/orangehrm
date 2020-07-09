@@ -22,14 +22,14 @@
 /**
  * @group Leave
  */
-class WorkScheduleServiceTest extends PHPUnit_Framework_TestCase {
+class WorkScheduleServiceTest extends PHPUnit\Framework\TestCase {
 
     private $service;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new WorkScheduleService();
     }
     

@@ -22,14 +22,14 @@
  *
  * @group Time
  */
-class TimesheetDaoTest extends PHPUnit_Framework_TestCase {
+class TimesheetDaoTest extends PHPUnit\Framework\TestCase {
 
     private $timesheetDao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->timesheetDao = new TimesheetDao();
         TestDataService::truncateSpecificTables(array('SystemUser', 'Employee'));        

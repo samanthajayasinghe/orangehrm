@@ -6,7 +6,7 @@ class orangehrmSecurityAuthenticationPluginAllTests {
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmSecurityAuthenticationPluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmSecurityAuthenticationPluginAllTest');
 
         $basePath = dirname(__FILE__);
 
@@ -18,7 +18,7 @@ class orangehrmSecurityAuthenticationPluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 }
 

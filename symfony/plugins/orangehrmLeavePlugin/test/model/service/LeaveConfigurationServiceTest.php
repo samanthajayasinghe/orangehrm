@@ -23,14 +23,14 @@
  * Test class for LeaveConfigurationService
  * @group Leave
  */
-class LeaveConfigurationServiceTest extends PHPUnit_Framework_TestCase {
+class LeaveConfigurationServiceTest extends PHPUnit\Framework\TestCase {
 
     private $service;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new LeaveConfigurationService();
     }
     

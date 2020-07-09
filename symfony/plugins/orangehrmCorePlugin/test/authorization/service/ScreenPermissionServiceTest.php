@@ -22,7 +22,7 @@
  * Description of ScreenPermissionServiceTest
  * @group Core
  */
-class ScreenPermissionServiceTest extends PHPUnit_Framework_TestCase {
+class ScreenPermissionServiceTest extends PHPUnit\Framework\TestCase {
     
     /** @property ScreenPermissionService $service */
     private $service;
@@ -30,7 +30,7 @@ class ScreenPermissionServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new ScreenPermissionService();
     }    
     

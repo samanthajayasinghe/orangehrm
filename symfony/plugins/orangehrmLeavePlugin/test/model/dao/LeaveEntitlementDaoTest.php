@@ -22,7 +22,7 @@
 /**
  * @group Leave 
  */
-class LeaveEntitlementDaoTest extends PHPUnit_Framework_TestCase {
+class LeaveEntitlementDaoTest extends PHPUnit\Framework\TestCase {
 
     /**
      * @var LeaveEntitlementDao 
@@ -33,7 +33,7 @@ class LeaveEntitlementDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->dao = new LeaveEntitlementDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeaveEntitlement.yml';

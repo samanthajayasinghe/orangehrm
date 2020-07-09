@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class EducationDaoTest extends PHPUnit_Framework_TestCase {
+class EducationDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $educationDao;
 	protected $fixture;
@@ -29,7 +29,7 @@ class EducationDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->educationDao = new EducationDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/EducationDao.yml';

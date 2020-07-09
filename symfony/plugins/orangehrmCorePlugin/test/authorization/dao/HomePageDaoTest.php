@@ -22,7 +22,7 @@
 /**
  * Test class for home page dao
  */
-class HomePageDaoTest extends PHPUnit_Framework_TestCase {
+class HomePageDaoTest extends PHPUnit\Framework\TestCase {
     
     private $homePageDao;
     private $fixture;
@@ -31,7 +31,7 @@ class HomePageDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {
 
         TestDataService::truncateTables(array('ModuleDefaultPage', 'HomePage', 'UserRole', 'Module'));
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/HomePageDao.yml';

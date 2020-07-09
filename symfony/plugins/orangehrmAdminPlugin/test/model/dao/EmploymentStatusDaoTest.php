@@ -23,7 +23,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class EmploymentStatusDaoTest extends PHPUnit_Framework_TestCase {
+class EmploymentStatusDaoTest extends PHPUnit\Framework\TestCase {
 	
 	private $empStatusDao;
 	protected $fixture;
@@ -31,7 +31,7 @@ class EmploymentStatusDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->empStatusDao = new EmploymentStatusDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/EmploymentStatusDao.yml';

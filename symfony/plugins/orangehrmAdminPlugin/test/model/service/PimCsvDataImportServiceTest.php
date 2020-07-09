@@ -23,14 +23,14 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class PimCsvDataImportServiceTest extends PHPUnit_Framework_TestCase {
+class PimCsvDataImportServiceTest extends PHPUnit\Framework\TestCase {
 
 	private $pimDataImportService;
 
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 		$this->pimDataImportService = new PimCsvDataImportService();
 	}
 	

@@ -20,11 +20,11 @@
 /**
  * @group Time
  */
-class WeeklyTimesheetPeriodTest extends PHPUnit_Framework_TestCase {
+class WeeklyTimesheetPeriodTest extends PHPUnit\Framework\TestCase {
 
     private $weeklyTimesheetPeriod;
 
-    protected function setUp() {
+    protected function setUp() :void {
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmTimePlugin/test/fixtures/WeeklyTimesheetPeriod.yml');
 
         $this->weeklyTimesheetPeriod = new WeeklyTimesheetPeriod();

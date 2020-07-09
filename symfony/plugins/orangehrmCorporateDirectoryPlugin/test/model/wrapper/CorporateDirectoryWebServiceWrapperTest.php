@@ -13,20 +13,20 @@
  */
 require_once ROOT_PATH . "/lib/confs/Conf.php";
 
-class CorporateDirectoryWebServiceWrapperTest extends PHPUnit_Framework_TestCase {
+class CorporateDirectoryWebServiceWrapperTest extends PHPUnit\Framework\TestCase {
 
     protected $fixture;
     protected $manager;
     protected $corporateDirectoryWebServiceWrapper;
 
-    public static function setupBeforeClass() {
+    public static function setupBeforeClass():void {
         WSManager::resetConfiguration();
     }
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->corporateDirectoryWebServiceWrapper = new CorporateDirectoryWebServiceWrapper();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorporateDirectoryPlugin/test/fixtures/EmployeeDirectoryWrapperData.yml';
         $this->manager = new WSManager();

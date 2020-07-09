@@ -5,13 +5,13 @@
  *
  * @author sujith
  */
-class EmployeeYearsOfServiceTest extends PHPUnit_Framework_TestCase {
+class EmployeeYearsOfServiceTest extends PHPUnit\Framework\TestCase {
     private $employeeService;
 
     /**
      * Setup Function
      */
-    public function setup() {
+    public function setup(): void {
         $this->employeeService = new EmployeeService();
     }
 

@@ -9,7 +9,7 @@ require_once ROOT_PATH . '/symfony/lib/vendor/symfony/lib/helper/TagHelper.php';
  * @group Core
  * @group ListComponent
  */
-class ButtonTest extends PHPUnit_Framework_TestCase {
+class ButtonTest extends PHPUnit\Framework\TestCase {
 
     /**
      * @var Button
@@ -20,7 +20,7 @@ class ButtonTest extends PHPUnit_Framework_TestCase {
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->button = new Button;
     }
 
@@ -28,7 +28,7 @@ class ButtonTest extends PHPUnit_Framework_TestCase {
      * Tears down the fixture, for example, closes a network connection.
      * This method is called after a test is executed.
      */
-    protected function tearDown() {
+    protected function tearDown() :void {
 
     }
 

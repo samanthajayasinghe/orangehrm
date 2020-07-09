@@ -23,14 +23,14 @@
  * Description of DataGroupServiceTest
  * @group Core
  */
-class DataGroupServiceTest extends PHPUnit_Framework_TestCase {
+class DataGroupServiceTest extends PHPUnit\Framework\TestCase {
 
     private $service;
     
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new DataGroupService();        
     }
     

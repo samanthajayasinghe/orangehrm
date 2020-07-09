@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Leave\Entity\LeaveRequestComment;
 
 
-class ApiLeaveRequestCommentTest extends PHPUnit_Framework_TestCase
+class ApiLeaveRequestCommentTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

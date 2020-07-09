@@ -13,21 +13,21 @@
  */
 require_once ROOT_PATH . "/lib/confs/Conf.php";
 
-class AdminWebServiceWrapperTest extends PHPUnit_Framework_TestCase {
+class AdminWebServiceWrapperTest extends PHPUnit\Framework\TestCase {
 
     protected $jobTitlefixture;
     protected $manager;
     protected $adminWebServiceWrapper;
     protected $locationFixture;
     protected $locationTestCases;
-    public static function setupBeforeClass() {
+    public static function setupBeforeClass():void {
         WSManager::resetConfiguration();
     }
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->adminWebServiceWrapper = new AdminWebServiceWrapper();
         $this->jobTitlefixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/JobTitleDao.yml';
         $this->locationFixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/LocationDao.yml';

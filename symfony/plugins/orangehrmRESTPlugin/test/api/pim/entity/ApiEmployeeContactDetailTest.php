@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Pim\Entity\EmployeeContactDetail;
 
 
-class ApiEmployeeContactDetailTest extends PHPUnit_Framework_TestCase
+class ApiEmployeeContactDetailTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

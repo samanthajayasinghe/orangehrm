@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class PayGradeServiceTest extends PHPUnit_Framework_TestCase {
+class PayGradeServiceTest extends PHPUnit\Framework\TestCase {
 	
 	private $payGradeService;
 	protected $fixture;
@@ -30,7 +30,7 @@ class PayGradeServiceTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->payGradeService = new PayGradeService();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/PayGradeDao.yml';

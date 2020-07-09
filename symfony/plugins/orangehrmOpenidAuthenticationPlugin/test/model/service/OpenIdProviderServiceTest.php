@@ -24,9 +24,9 @@
  * @group openidauth
  * @author orangehrm
  */
-class OpenIdProviderServiceTest extends PHPUnit_Framework_TestCase {
+class OpenIdProviderServiceTest extends PHPUnit\Framework\TestCase {
     private $openIdProviderService;
-     protected function setUp() {
+     protected function setUp() :void {
         $this->openIdProviderService = new OpenIdProviderService();
     }
     

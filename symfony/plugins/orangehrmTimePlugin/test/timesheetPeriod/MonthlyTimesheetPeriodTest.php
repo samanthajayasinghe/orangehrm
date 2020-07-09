@@ -20,11 +20,11 @@
 /**
  * @group Time
  */
-class MonthlyTimesheetPeriodTest extends PHPUnit_Framework_TestCase {
+class MonthlyTimesheetPeriodTest extends PHPUnit\Framework\TestCase {
 
     private $monthlyTimesheetPeriod;
 
-    protected function setUp() {
+    protected function setUp() :void {
         TestDataService::truncateTables(array('Config'));
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmTimePlugin/test/fixtures/MonthlyTimesheetPeriod.yml');
         $this->monthlyTimesheetPeriod = new MonthlyTImesheetPeriod();

@@ -29,7 +29,7 @@ use Orangehrm\Rest\Api\Pim\Entity\CustomField;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiCustomFieldAPITest1 extends PHPUnit_Framework_TestCase
+class ApiCustomFieldAPITest1 extends PHPUnit\Framework\TestCase
 {
     private $employeeCustomFieldAPI;
 
@@ -37,7 +37,7 @@ class ApiCustomFieldAPITest1 extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent   = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

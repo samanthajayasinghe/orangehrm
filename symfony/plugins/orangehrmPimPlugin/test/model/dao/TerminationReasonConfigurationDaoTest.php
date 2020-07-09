@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class TerminationReasonConfigurationDaoTest extends PHPUnit_Framework_TestCase {
+class TerminationReasonConfigurationDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $terminationReasonConfigurationDao;
 	protected $fixture;
@@ -29,7 +29,7 @@ class TerminationReasonConfigurationDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->terminationReasonConfigurationDao = new TerminationReasonConfigurationDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/TerminationReasonConfigurationDao.yml';

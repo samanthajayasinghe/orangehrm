@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class WorkShiftDaoTest extends PHPUnit_Framework_TestCase {
+class WorkShiftDaoTest extends PHPUnit\Framework\TestCase {
 
     private $workShiftDao;
     protected $fixture;
@@ -30,7 +30,7 @@ class WorkShiftDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->workShiftDao = new WorkShiftDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/WorkShiftDao.yml';

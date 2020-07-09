@@ -10,7 +10,7 @@
  * @group performance
  * @author nadeera
  */
-class ReviewerGroupTest extends PHPUnit_Framework_TestCase {
+class ReviewerGroupTest extends PHPUnit\Framework\TestCase {
 
     public function testReviewGroupId1() {
         $group = new SelfReviewerGroup();

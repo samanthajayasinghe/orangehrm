@@ -22,14 +22,14 @@
  * @group CorporateDirectory
  */
 require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
-class EmployeeDirectoryDaoTest extends PHPUnit_Framework_TestCase {
+class EmployeeDirectoryDaoTest extends PHPUnit\Framework\TestCase {
 
     private $employeeDirectoryDao;
 
     /**
      * Set up method
      */
-  protected function setUp() {
+  protected function setUp() :void {
         $this->employeeDirectoryDao = new EmployeeDirectoryDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorporateDirectoryPlugin/test/fixtures/EmployeeDirectoryDao.yml';
         TestDataService::populate($this->fixture);

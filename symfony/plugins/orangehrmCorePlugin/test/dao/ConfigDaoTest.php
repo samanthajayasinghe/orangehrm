@@ -6,14 +6,14 @@
  * ConfigDao Test Class
  * @group Core
  */
-class ConfigDaoTest extends PHPUnit_Framework_TestCase {
+class ConfigDaoTest extends PHPUnit\Framework\TestCase {
 
     private $configDao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->configDao = new ConfigDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/ConfigDao.yml';
         TestDataService::populate($this->fixture);

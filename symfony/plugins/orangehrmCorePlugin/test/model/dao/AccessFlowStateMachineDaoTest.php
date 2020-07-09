@@ -10,14 +10,14 @@
  *
  * @group Core
  */
-class AccessFlowStateMachineDaoTest extends PHPUnit_Framework_TestCase {
+class AccessFlowStateMachineDaoTest extends PHPUnit\Framework\TestCase {
 
     private $accessFlowStateMachineDao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->accessFlowStateMachineDao = new AccessFlowStateMachineDao();
 

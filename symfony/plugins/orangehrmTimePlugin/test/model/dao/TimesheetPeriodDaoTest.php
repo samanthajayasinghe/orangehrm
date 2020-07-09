@@ -22,14 +22,14 @@
  *
  * @group Time
  */
-class TimesheetPeriodDaoTest extends PHPUnit_Framework_TestCase {
+class TimesheetPeriodDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $timesheetPeriodDao;
 
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
         TestDataService::truncateTables(array('Config'));
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmTimePlugin/test/fixtures/TimesheetPeriodDao.yml');
         $this->timesheetPeriodDao = new TimesheetPeriodDao();

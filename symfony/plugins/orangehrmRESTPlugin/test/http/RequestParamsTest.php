@@ -23,7 +23,7 @@
  * @group API
  */
 
-class RequestParamsTest extends PHPUnit_Framework_TestCase
+class RequestParamsTest extends PHPUnit\Framework\TestCase
 {
 
    public function testGetQueryParam(){

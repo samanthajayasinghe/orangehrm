@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  *  @group Admin
  */
-class LocationDaoTest extends PHPUnit_Framework_TestCase {
+class LocationDaoTest extends PHPUnit\Framework\TestCase {
 	
 	private $locationDao;
 	protected $fixture;
@@ -30,7 +30,7 @@ class LocationDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->locationDao = new LocationDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/LocationDao.yml';

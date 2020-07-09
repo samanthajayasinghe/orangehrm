@@ -24,7 +24,7 @@
  * 
  * @group Leave 
  */
-class LeaveEntitlementServiceTest extends PHPUnit_Framework_TestCase {
+class LeaveEntitlementServiceTest extends PHPUnit\Framework\TestCase {
 
     private $service;
     protected $fixture;
@@ -32,7 +32,7 @@ class LeaveEntitlementServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new LeaveEntitlementService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeaveEntitlement.yml';        
     }

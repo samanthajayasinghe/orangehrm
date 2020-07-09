@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class LanguageDaoTest extends PHPUnit_Framework_TestCase {
+class LanguageDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $languageDao;
 	protected $fixture;
@@ -29,7 +29,7 @@ class LanguageDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->languageDao = new LanguageDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/LanguageDao.yml';

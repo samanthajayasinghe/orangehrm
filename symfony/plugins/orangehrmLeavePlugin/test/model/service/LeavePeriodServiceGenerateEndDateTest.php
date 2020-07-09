@@ -19,9 +19,9 @@
 /**
  * @group Leave 
  */
-class LeavePeriodServiceGenerateEndDateTest extends PHPUnit_Framework_TestCase {
+class LeavePeriodServiceGenerateEndDateTest extends PHPUnit\Framework\TestCase {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->leavePeriodService = new LeavePeriodService();
 

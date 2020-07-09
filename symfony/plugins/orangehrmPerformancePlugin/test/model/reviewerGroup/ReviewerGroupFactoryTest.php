@@ -10,7 +10,7 @@
  * @group performance
  * @author nadeera
  */
-class ReviewerGroupFactoryTest extends PHPUnit_Framework_TestCase {
+class ReviewerGroupFactoryTest extends PHPUnit\Framework\TestCase {
 
     public function testGetInstance() {
         $groupFactory = ReviewerGroupFactory::getInstance();

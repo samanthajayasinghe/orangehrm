@@ -29,7 +29,7 @@ class AppsOrangeHRMAllTests {
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('Apps OrangeHRM unit tests');
+        $suite = new PHPUnit\Framework\TestSuite('Apps OrangeHRM unit tests');
 
         /* Service Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/model/core/service/EmailServiceTest.php');
@@ -39,7 +39,7 @@ class AppsOrangeHRMAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

@@ -24,7 +24,7 @@ use Orangehrm\Rest\Api\Validator;
  * @group API
  */
 
-class ValidatorTest extends PHPUnit_Framework_TestCase
+class ValidatorTest extends PHPUnit\Framework\TestCase
 {
 
     public function testValidateWithOneProperty() {

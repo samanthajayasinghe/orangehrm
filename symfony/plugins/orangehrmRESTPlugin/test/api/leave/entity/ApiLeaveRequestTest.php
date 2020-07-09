@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Leave\Entity\LeaveRequest;
 use Orangehrm\Rest\Api\Leave\Entity\Leave;
 
-class ApiLeaveRequestTest extends PHPUnit_Framework_TestCase
+class ApiLeaveRequestTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

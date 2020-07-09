@@ -25,12 +25,12 @@
  * Leave period service test
  * @group Leave 
  */
-class LeavePeriodServiceTest extends PHPUnit_Framework_TestCase {
+class LeavePeriodServiceTest extends PHPUnit\Framework\TestCase {
 
     private $leavePeriodService;
    private $fixture;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeavePeriodService.yml';
         $this->leavePeriodService = new LeavePeriodService();

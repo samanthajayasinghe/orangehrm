@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class LicenseDaoTest extends PHPUnit_Framework_TestCase {
+class LicenseDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $licenseDao;
 	protected $fixture;
@@ -29,7 +29,7 @@ class LicenseDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->licenseDao = new LicenseDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/LicenseDao.yml';

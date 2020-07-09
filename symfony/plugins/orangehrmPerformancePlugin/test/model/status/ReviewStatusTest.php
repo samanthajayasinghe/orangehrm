@@ -10,7 +10,7 @@
  * @group performance
  * @author nadeera
  */
-class ReviewStatusTest extends PHPUnit_Framework_TestCase {
+class ReviewStatusTest extends PHPUnit\Framework\TestCase {
 
     public function testGetInstanceTest1() {
         $this->assertTrue(ReviewStatusActivated::getInstance() instanceof ReviewStatusActivated);

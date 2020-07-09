@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Recruitment
  */
-class VacancyDaoTest extends PHPUnit_Framework_TestCase {
+class VacancyDaoTest extends PHPUnit\Framework\TestCase {
 
     private $vacancyDao;
     protected $fixture;
@@ -30,7 +30,7 @@ class VacancyDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->vacancyDao = new VacancyDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmRecruitmentPlugin/test/fixtures/CandidateDao.yml';

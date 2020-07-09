@@ -22,7 +22,7 @@
  * Description of ScreenPermissionDaoTest
  * @group Core
  */
-class ScreenPermissionDaoTest  extends PHPUnit_Framework_TestCase {
+class ScreenPermissionDaoTest  extends PHPUnit\Framework\TestCase {
     
     /** @property ScreenPermissionDao $dao */
     private $dao;
@@ -30,7 +30,7 @@ class ScreenPermissionDaoTest  extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {        
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/ScreenPermissionDao.yml';
         TestDataService::truncateSpecificTables(array('SystemUser'));
         TestDataService::populate($this->fixture);

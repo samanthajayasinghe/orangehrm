@@ -21,13 +21,13 @@
 /**
  * @group Core
  */
-class ohrmKeyValueCacheTest extends PHPUnit_Framework_TestCase {
+class ohrmKeyValueCacheTest extends PHPUnit\Framework\TestCase {
 
     
-    protected function setUp() {
+    protected function setUp() :void {
     }
     
-    protected function tearDown() {
+    protected function tearDown() :void {
         $fileSystem = new sfFilesystem();
         $fileSystem->remove(sfFinder::type('file')->discard('.sf')->in(sfConfig::get('sf_cache_dir') . '/ohrmKeyValueCache'));       
     }

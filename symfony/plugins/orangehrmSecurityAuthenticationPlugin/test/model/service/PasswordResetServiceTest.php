@@ -20,7 +20,7 @@
 /**
  * @group SecurityAuthentication
  */
-class PasswordResetServiceTest extends PHPUnit_Framework_TestCase
+class PasswordResetServiceTest extends PHPUnit\Framework\TestCase
 {
     /**
      * @var PasswordResetService
@@ -31,7 +31,7 @@ class PasswordResetServiceTest extends PHPUnit_Framework_TestCase
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->secuirtyAuthService = new PasswordResetService;
     }
 

@@ -19,13 +19,13 @@
  */
 class orangehrmCorePluginAllTests {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmCorePluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmCorePluginAllTest');
 
         /* Component Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/components/ListHeaderTest.php');
@@ -97,7 +97,7 @@ class orangehrmCorePluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

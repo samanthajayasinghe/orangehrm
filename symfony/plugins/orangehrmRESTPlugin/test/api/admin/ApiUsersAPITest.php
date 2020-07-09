@@ -29,7 +29,7 @@ use Orangehrm\Rest\Api\Admin\Entity\User;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiUsersAPITest extends PHPUnit_Framework_TestCase
+class ApiUsersAPITest extends PHPUnit\Framework\TestCase
 {
     private $usersAPI;
 
@@ -37,7 +37,7 @@ class ApiUsersAPITest extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent   = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

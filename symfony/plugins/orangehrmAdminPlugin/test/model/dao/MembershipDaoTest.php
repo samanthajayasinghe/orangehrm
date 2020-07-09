@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  *  @group Admin
  */
-class MembershipDaoTest extends PHPUnit_Framework_TestCase {
+class MembershipDaoTest extends PHPUnit\Framework\TestCase {
 
     private $membershipDao;
     protected $fixture;
@@ -30,7 +30,7 @@ class MembershipDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->membershipDao = new MembershipDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/MembershipDao.yml';

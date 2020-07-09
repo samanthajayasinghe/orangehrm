@@ -12,7 +12,7 @@
  */
 abstract class PluginEmployeeSalary extends BaseEmployeeSalary {
     
-    public function setUp() {
+    public function setup(): void {
         parent::setup();
 
         if (KeyHandler::keyExists()) {

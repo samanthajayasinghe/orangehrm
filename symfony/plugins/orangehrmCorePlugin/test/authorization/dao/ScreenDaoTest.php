@@ -22,7 +22,7 @@
  * Description of ScreenDaoTest
  * @group Core
  */
-class ScreenDaoTest extends PHPUnit_Framework_TestCase {
+class ScreenDaoTest extends PHPUnit\Framework\TestCase {
     
     /** @property ScreenPermissionDao $dao */
     private $dao;
@@ -30,7 +30,7 @@ class ScreenDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {        
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/ScreenDao.yml';
         TestDataService::truncateSpecificTables(array('SystemUser'));
         TestDataService::populate($this->fixture);

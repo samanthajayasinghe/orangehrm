@@ -10,11 +10,11 @@
  *
  * @group Core
  */
-class AccessFlowStateMachineServiceTest extends PHPUnit_Framework_TestCase {
+class AccessFlowStateMachineServiceTest extends PHPUnit\Framework\TestCase {
 
     private $accessFlowStateMachineService;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->accessFlowStateMachineService = new AccessFlowStateMachineService();
 

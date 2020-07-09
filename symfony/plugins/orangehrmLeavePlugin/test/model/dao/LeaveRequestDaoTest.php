@@ -23,7 +23,7 @@
  * LeaveRequestDao Test
  * @group Leave 
  */
- class LeaveRequestDaoTest extends PHPUnit_Framework_TestCase{
+ class LeaveRequestDaoTest extends PHPUnit\Framework\TestCase{
  	
   	public $leaveRequestDao ;
   	public $leaveType ;
@@ -31,7 +31,7 @@
   	public $employee ;
         private $fixture;
  	
- 	protected function setUp() {
+ 	protected function setUp() :void {
 
             $this->leaveRequestDao = new LeaveRequestDao();
             $this->leaveRequestDao->markApprovedLeaveAsTaken();

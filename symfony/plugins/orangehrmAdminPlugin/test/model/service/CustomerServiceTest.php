@@ -23,7 +23,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /** 
  * @group Admin 
  */
-class CustomerServiceTest extends PHPUnit_Framework_TestCase {
+class CustomerServiceTest extends PHPUnit\Framework\TestCase {
 	
 	private $customerService;
 	private $fixture;
@@ -31,7 +31,7 @@ class CustomerServiceTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 		$this->customerService = new CustomerService();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/ProjectDao.yml';
 		TestDataService::populate($this->fixture);

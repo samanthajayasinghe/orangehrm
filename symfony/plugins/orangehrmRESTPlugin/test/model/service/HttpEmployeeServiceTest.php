@@ -28,7 +28,7 @@
 use Orangehrm\Rest\Api\Pim\EmployeeService;
 use Orangehrm\Rest\Api\Pim\Entity\Employee;
 
-class HttpEmployeeServiceTest extends PHPUnit_Framework_TestCase
+class HttpEmployeeServiceTest extends PHPUnit\Framework\TestCase
 {
     private $employeeService;
 
@@ -36,7 +36,7 @@ class HttpEmployeeServiceTest extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $this->employeeService = new EmployeeService();
     }

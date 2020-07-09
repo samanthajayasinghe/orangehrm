@@ -23,7 +23,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class CustomerDaoTest extends PHPUnit_Framework_TestCase {
+class CustomerDaoTest extends PHPUnit\Framework\TestCase {
 	
 	private $customerDao;
 	protected $fixture;
@@ -31,7 +31,7 @@ class CustomerDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->customerDao = new CustomerDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/ProjectDao.yml';
