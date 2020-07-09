@@ -3,12 +3,12 @@
 /**
  *  @group Attendance
  */
-class AttendanceServiceTest extends PHPUnit_Framework_Testcase {
+class AttendanceServiceTest extends PHPUnit\Framework\TestCase {
 
     private $attendanceService;
     private $fixture;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
 
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAttendancePlugin/test/fixtures/AttendanceService.yml';
@@ -244,7 +244,7 @@ class AttendanceServiceTest extends PHPUnit_Framework_Testcase {
         $this->assertEquals('9.5', $this->attendanceService->getTimezone($value));
 
         $value = 16;
-        $this->assertEquals('-10', $this->attendanceService->getTimezone($value));
+        $this->assertEquals('-10.00', $this->attendanceService->getTimezone($value));
 
         $value = 22;
         $this->assertEquals('-4.00', $this->attendanceService->getTimezone($value));

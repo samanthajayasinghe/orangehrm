@@ -29,14 +29,14 @@ use Orangehrm\Rest\Api\Leave\Entity\LeaveEntitlement;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiLeaveEntitlementAPITest extends PHPUnit_Framework_TestCase
+class ApiLeaveEntitlementAPITest extends PHPUnit\Framework\TestCase
 {
     private $entitlementApi;
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

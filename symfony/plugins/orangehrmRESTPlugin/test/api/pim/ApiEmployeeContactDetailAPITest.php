@@ -29,7 +29,7 @@ use Orangehrm\Rest\Api\Pim\Entity\EmployeeContactDetail;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiEmployeeContactDetailAPITest extends PHPUnit_Framework_TestCase
+class ApiEmployeeContactDetailAPITest extends PHPUnit\Framework\TestCase
 {
     /**
      * @var EmployeeContactDetailAPI
@@ -40,7 +40,7 @@ class ApiEmployeeContactDetailAPITest extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

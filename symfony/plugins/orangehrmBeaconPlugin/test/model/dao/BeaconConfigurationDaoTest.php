@@ -11,12 +11,12 @@
  *
  *  @group beacon
  */
-class BeaconConfigurationDaoTest extends PHPUnit_Framework_TestCase{
+class BeaconConfigurationDaoTest extends PHPUnit\Framework\TestCase{
     
     private $beaconConfigDao;
     private $fixture;
     
-    protected function setUp() {
+    protected function setUp() :void {
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmBeaconPlugin/test/fixtures/BeaconConfigurationDao.yml';
         TestDataService::populate($this->fixture);
         $this->beaconConfigDao = new BeaconConfigurationDao();

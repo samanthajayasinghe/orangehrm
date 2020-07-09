@@ -4,11 +4,11 @@
  * CustomFieldsDao Test Class
  * @group Pim
  */
-class CustomFieldConfigurationDaoTest extends PHPUnit_Framework_TestCase {
+class CustomFieldConfigurationDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $customFieldConfigurationDao ;
 
-	protected function setUp() {
+	protected function setUp() :void {
         
         $this->customFieldConfigurationDao = new CustomFieldConfigurationDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/CustomFieldConfigurationDao.yml';

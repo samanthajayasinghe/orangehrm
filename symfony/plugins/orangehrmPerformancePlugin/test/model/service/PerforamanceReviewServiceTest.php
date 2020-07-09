@@ -14,7 +14,7 @@
 /**
  * @group performance
  */
-class PerforamanceReviewServiceTest extends PHPUnit_Framework_TestCase {
+class PerforamanceReviewServiceTest extends PHPUnit\Framework\TestCase {
 
     public function testSaveReview() {
 

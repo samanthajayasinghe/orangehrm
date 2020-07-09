@@ -24,8 +24,8 @@
  * @group openidauth
  * @author orangehrm
  */
-class OpenIdProviderDaoTest extends PHPUnit_Framework_TestCase {
-    protected function setUp() {
+class OpenIdProviderDaoTest extends PHPUnit\Framework\TestCase {
+    protected function setUp() :void {
         $this->dao = new OpenIdProviderDao();
         $fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmOpenidAuthenticationPlugin/test/fixtures/openiduser.yml';
         TestDataService::truncateTables(array('OpenidProvider'));    

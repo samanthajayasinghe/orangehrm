@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Pim\Entity\Employee;
 use Orangehrm\Rest\Api\Pim\Entity\Supervisor;
 
-class ApiEmployeeTest extends PHPUnit_Framework_TestCase
+class ApiEmployeeTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

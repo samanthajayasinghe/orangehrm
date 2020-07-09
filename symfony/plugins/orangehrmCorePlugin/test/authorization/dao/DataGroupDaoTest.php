@@ -22,7 +22,7 @@
  * Description of DataGroupDaoTest
  * @group Core
  */
-class DataGroupDaoTest extends PHPUnit_Framework_TestCase {
+class DataGroupDaoTest extends PHPUnit\Framework\TestCase {
     
     /** @property ScreenPermissionDao $dao */
     private $dao;
@@ -30,7 +30,7 @@ class DataGroupDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {        
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/DataGroupDao.yml';
         TestDataService::truncateSpecificTables(array('SystemUser'));
         TestDataService::populate($this->fixture);

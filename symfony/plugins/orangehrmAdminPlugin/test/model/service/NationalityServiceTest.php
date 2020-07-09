@@ -22,7 +22,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  *  @group Admin
  */
-class NationalityServiceTest extends PHPUnit_Framework_TestCase {
+class NationalityServiceTest extends PHPUnit\Framework\TestCase {
 
     private $nationalityService;
     private $fixture;
@@ -30,7 +30,7 @@ class NationalityServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->nationalityService = new NationalityService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/NationalityDao.yml';
         TestDataService::populate($this->fixture);

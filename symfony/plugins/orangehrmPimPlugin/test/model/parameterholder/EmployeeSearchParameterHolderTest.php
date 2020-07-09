@@ -17,11 +17,11 @@
  * Boston, MA  02110-1301, USA
  */
  
-class EmployeeSearchParameterHolderTest extends PHPUnit_Framework_TestCase {
+class EmployeeSearchParameterHolderTest extends PHPUnit\Framework\TestCase {
     
     private $parameterHolder;
     
-    public function setup() {
+    public function setup(): void {
         $this->parameterHolder = new EmployeeSearchParameterHolder();
     }
 

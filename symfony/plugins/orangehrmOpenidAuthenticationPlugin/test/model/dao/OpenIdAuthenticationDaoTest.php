@@ -24,8 +24,8 @@
  * @group openidauth
  * @author lahiru
  */
-class OpenIdAuthenticationDaoTest extends PHPUnit_Framework_TestCase {
-    protected function setUp() {
+class OpenIdAuthenticationDaoTest extends PHPUnit\Framework\TestCase {
+    protected function setUp() :void {
         $this->dao = new OpenIdAuthenticationDao();
         $fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmOpenidAuthenticationPlugin/test/fixtures/openiduser.yml';
         TestDataService::truncateTables(array('SystemUser'));    

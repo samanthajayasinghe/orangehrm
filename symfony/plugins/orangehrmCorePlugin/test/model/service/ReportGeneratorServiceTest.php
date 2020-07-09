@@ -21,11 +21,11 @@
 /**
  * @group Core
  */
-class ReportGeneratorServiceTest extends PHPUnit_Framework_TestCase {
+class ReportGeneratorServiceTest extends PHPUnit\Framework\TestCase {
 
     private $reportGeneratorService;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->reportGeneratorService = new ReportGeneratorService();
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/ReportGeneratorService.yml');

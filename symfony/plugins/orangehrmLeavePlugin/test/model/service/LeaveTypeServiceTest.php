@@ -23,7 +23,7 @@
  * Leave Type rule service
  * @group Leave 
  */
- class LeaveTypeServiceTest extends PHPUnit_Framework_TestCase{
+ class LeaveTypeServiceTest extends PHPUnit\Framework\TestCase{
     
     private $leaveTypeService;
     protected $fixture;
@@ -31,7 +31,7 @@
     /**
      * PHPUnit setup function
      */
-    public function setup() {
+    public function setup(): void {
             
         $this->leaveTypeService =   new LeaveTypeService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeaveTypeService.yml';

@@ -14,7 +14,7 @@
 /**
  * @group performance 
  */
-class KpiServiceTest extends PHPUnit_Framework_TestCase {
+class KpiServiceTest extends PHPUnit\Framework\TestCase {
 
 
     public function testSaveKpi() {

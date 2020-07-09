@@ -22,7 +22,7 @@
  * Description of SystemUserServiceTest
  *
  */
-class SystemUserServiceTest extends PHPUnit_Framework_TestCase {
+class SystemUserServiceTest extends PHPUnit\Framework\TestCase {
     
     /** @property SystemUserService $systemUserService */
     private $systemUserService;
@@ -30,7 +30,7 @@ class SystemUserServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->systemUserService = new SystemUserService();
     }
     

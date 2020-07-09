@@ -22,11 +22,11 @@
  * @group Pim
  *
  */
-class PIMLeftMenuServiceTest extends PHPUnit_Framework_TestCase {
+class PIMLeftMenuServiceTest extends PHPUnit\Framework\TestCase {
     
     protected $leftMenuService;
     
-    protected function setUp() {
+    protected function setUp() :void {
         $this->leftMenuService = new TestPIMLeftMenuService();
     }
     

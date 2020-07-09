@@ -2,13 +2,13 @@
 
 class orangehrmPerformanceTrackerPluginAllTests {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmPerformanceTrackerPluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmPerformanceTrackerPluginAllTest');
 
         /* Dao Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/PerformanceTrackerDaoTest.php');
@@ -21,7 +21,7 @@ class orangehrmPerformanceTrackerPluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

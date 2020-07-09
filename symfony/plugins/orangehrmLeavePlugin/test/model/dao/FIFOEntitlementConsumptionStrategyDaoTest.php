@@ -22,13 +22,13 @@
 /**
  * Description of FIFOEntitlementConsumptionStrategyDaoTest
  */
-class FIFOEntitlementConsumptionStrategyDaoTest extends PHPUnit_Framework_TestCase {
+class FIFOEntitlementConsumptionStrategyDaoTest extends PHPUnit\Framework\TestCase {
     private $dao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->dao = new FIFOEntitlementConsumptionStrategyDao();
 
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/FIFOEntitlementStrategy.yml';

@@ -23,7 +23,7 @@
 /**
  * @group Core
  */
-class BaseServiceTest extends PHPUnit_Framework_TestCase {
+class BaseServiceTest extends PHPUnit\Framework\TestCase {
 
     private $baseService;
     protected $fixture;
@@ -31,7 +31,7 @@ class BaseServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->baseService = new BaseService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/sample_query_extensions.yml';
         PluginQueryExtensionManager::instance()->setQueryExtensions(sfYaml::load($this->fixture));

@@ -21,14 +21,14 @@
  * Description of MenuServiceTest
  * @group Core
  */
-class MenuServiceTest extends PHPUnit_Framework_TestCase {
+class MenuServiceTest extends PHPUnit\Framework\TestCase {
     
     private $menuService;
     
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {        
 
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/MenuDao.yml';
         TestDataService::populate($this->fixture);                

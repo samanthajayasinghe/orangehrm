@@ -22,12 +22,12 @@
 /**
  * @group Marketplace
  */
-class MarketplaceDaoTest extends PHPUnit_Framework_TestCase {
+class MarketplaceDaoTest extends PHPUnit\Framework\TestCase {
 
     private $marketplaceDao;
     private $fixture;
 
-    protected function setUp() {
+    protected function setUp() :void {
         $this->marketplaceDao = new MarketplaceDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmMarketPlacePlugin/test/fixtures/MarketplaceDao.yml';
         TestDataService::populate($this->fixture);

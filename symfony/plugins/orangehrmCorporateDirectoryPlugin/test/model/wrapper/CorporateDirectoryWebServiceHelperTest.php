@@ -11,11 +11,11 @@
  *
  * @author nirmal
  */
-class CorporateDirectoryWebServiceHelperTest extends PHPUnit_Framework_TestCase {
+class CorporateDirectoryWebServiceHelperTest extends PHPUnit\Framework\TestCase {
 
     protected $corporateDirectoryWebServiceHelper;
 
-    public function setUp() {
+    public function setup(): void {
         $this->corporateDirectoryWebServiceHelper = new CorporateDirectoryWebServiceHelper();
     }
 

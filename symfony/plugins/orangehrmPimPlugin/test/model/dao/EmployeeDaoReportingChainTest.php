@@ -10,7 +10,7 @@
  * @group ReportingChain
  *
  */
-class EmployeeDaoReportingChainTest extends PHPUnit_Framework_TestCase {
+class EmployeeDaoReportingChainTest extends PHPUnit\Framework\TestCase {
 
     /**
      *
@@ -22,7 +22,7 @@ class EmployeeDaoReportingChainTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->dao = new EmployeeDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/reporting-chain-test-data.yml';
         TestDataService::populate($this->fixture);

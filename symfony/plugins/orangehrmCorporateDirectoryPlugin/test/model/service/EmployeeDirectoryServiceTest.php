@@ -20,7 +20,7 @@
 /**
  * @group CorporateDirectory
  */
-class EmployeeDirectoryServiceTest extends PHPUnit_Framework_TestCase {
+class EmployeeDirectoryServiceTest extends PHPUnit\Framework\TestCase {
 
 
 
@@ -30,7 +30,7 @@ class EmployeeDirectoryServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->employeeDirectoryService = new EmployeeDirectoryService();
     }
     

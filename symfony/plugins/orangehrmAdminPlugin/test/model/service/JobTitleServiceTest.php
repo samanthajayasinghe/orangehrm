@@ -23,7 +23,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class JobTitleServiceTest extends PHPUnit_Framework_TestCase {
+class JobTitleServiceTest extends PHPUnit\Framework\TestCase {
 
     private $JobTitleService;
     protected $fixture;
@@ -31,7 +31,7 @@ class JobTitleServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->JobTitleService = new JobTitleService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/JobTitleDao.yml';
         TestDataService::populate($this->fixture);

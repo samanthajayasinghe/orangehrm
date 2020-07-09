@@ -25,13 +25,13 @@
  */
 use Orangehrm\Rest\Api\Pim\Entity\Employee;
 
-class HttpEmployeeTest extends PHPUnit_Framework_TestCase
+class HttpEmployeeTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

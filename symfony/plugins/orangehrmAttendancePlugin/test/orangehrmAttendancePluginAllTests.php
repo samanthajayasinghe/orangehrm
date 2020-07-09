@@ -21,12 +21,12 @@
  */
 class orangehrmAttendancePluginAllTests {
 
-    protected function setUp() {
-
-    }
+//    protected function setUp() :void {
+//
+//    }
      public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmAttendancePluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmAttendancePluginAllTest');
 
         /* Dao Test Cases */
        $suite->addTestFile(dirname(__FILE__) . '/model/dao/AttendanceDaoTest.php');
@@ -40,7 +40,7 @@ class orangehrmAttendancePluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 

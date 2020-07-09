@@ -29,7 +29,7 @@ use Orangehrm\Rest\Api\Pim\Entity\Employee;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiEmployeeSaveAPITest extends PHPUnit_Framework_TestCase
+class ApiEmployeeSaveAPITest extends PHPUnit\Framework\TestCase
 {
 
     public function testSaveEmployee()

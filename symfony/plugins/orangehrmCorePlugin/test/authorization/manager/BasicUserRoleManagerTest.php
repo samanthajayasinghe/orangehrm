@@ -22,7 +22,7 @@
  * Description of AbstractUserRoleManagerTest
  *
  */
-class BasicUserRoleManagerTest extends PHPUnit_Framework_TestCase {
+class BasicUserRoleManagerTest extends PHPUnit\Framework\TestCase {
     
     /** @property BasicUserRoleManager $service */
     private $manager;
@@ -30,7 +30,7 @@ class BasicUserRoleManagerTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {        
+    protected function setUp() :void {        
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/BasicUserRoleManager.yml';
         TestDataService::truncateSpecificTables(array('SystemUser', 'Project', 'JobCandidate', 'JobVacancy', 'JobInterview'));
         TestDataService::populate($this->fixture);

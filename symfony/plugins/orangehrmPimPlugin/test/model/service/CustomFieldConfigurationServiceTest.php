@@ -5,7 +5,7 @@
  *
  * @group Pim
  */
-class CustomFieldsServiceTest extends PHPUnit_Framework_TestCase {
+class CustomFieldsServiceTest extends PHPUnit\Framework\TestCase {
 
    private $testCases;
 	private $customFieldsService;
@@ -14,7 +14,7 @@ class CustomFieldsServiceTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 		$this->testCases = sfYaml::load(sfConfig::get('sf_test_dir') . '/fixtures/admin/customFields.yml');
 		$this->customFieldsService	= new CustomFieldConfigurationService();
 	}

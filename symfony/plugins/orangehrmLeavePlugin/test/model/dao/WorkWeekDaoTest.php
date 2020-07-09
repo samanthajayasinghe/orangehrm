@@ -23,12 +23,12 @@
 /**
  * @group Leave 
  */
-class WorkWeekDaoTest extends PHPUnit_Framework_TestCase {
+class WorkWeekDaoTest extends PHPUnit\Framework\TestCase {
 
     private $workWeekDao;
     private $testCases;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->testCases = sfYaml::load(sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/WorkWeekDao.yml');
         $this->workWeekDao = new WorkWeekDao();

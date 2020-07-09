@@ -22,11 +22,11 @@
  *
  * @group Time
  */
-class TimesheetPeriodServiceTest extends PHPUnit_Framework_Testcase {
+class TimesheetPeriodServiceTest extends PHPUnit\Framework\TestCase {
 
 	private $timesheetPeriodService;
 
-	protected function setUp() {
+	protected function setUp() :void {
 	
 		$this->timesheetPeriodService = new TimesheetPeriodService();
                 $pdo = Doctrine_Manager::getInstance()->getCurrentConnection()->getDbh();

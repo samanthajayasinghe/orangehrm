@@ -23,12 +23,12 @@
  * Leave period service test
  * @group Leave 
  */
-class LeavePeriodHistoryServiceTest extends PHPUnit_Framework_TestCase {
+class LeavePeriodHistoryServiceTest extends PHPUnit\Framework\TestCase {
 
     private $leavePeriodService;
     private $fixture;
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->leavePeriodService = new LeavePeriodService();
         $leaveEntitlementService = new LeaveEntitlementService();

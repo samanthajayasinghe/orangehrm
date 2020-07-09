@@ -2,13 +2,13 @@
 
 class orangehrmPerformancePluginAllTests {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
 
     public static function suite() {
         
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmPerformancePluginTest');        
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmPerformancePluginTest');
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/KpiDaoTest.php');       
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/PerforamanceReviewDaoTest.php');
         $suite->addTestFile(dirname(__FILE__) . '/model/reviewerGroup/ReviewerGroupFactoryTest.php');
@@ -22,7 +22,7 @@ class orangehrmPerformancePluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

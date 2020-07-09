@@ -21,7 +21,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Admin
  */
-class ReportingMethodConfigurationDaoTest extends PHPUnit_Framework_TestCase {
+class ReportingMethodConfigurationDaoTest extends PHPUnit\Framework\TestCase {
 
 	private $reportingMethodConfigurationDao;
 	protected $fixture;
@@ -29,7 +29,7 @@ class ReportingMethodConfigurationDaoTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Set up method
 	 */
-	protected function setUp() {
+	protected function setUp() :void {
 
 		$this->reportingMethodConfigurationDao = new ReportingMethodConfigurationDao();
 		$this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/ReportingMethodConfigurationDao.yml';

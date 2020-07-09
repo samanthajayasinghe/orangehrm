@@ -22,9 +22,9 @@
 /**
  * Description of PluginWorkflowStateMachineTest
  */
-class PluginWorkflowStateMachineTest extends PHPUnit_Framework_TestCase {
+class PluginWorkflowStateMachineTest extends PHPUnit\Framework\TestCase {
 
-    protected function setUp() {
+    protected function setUp() :void {
 
     }
     

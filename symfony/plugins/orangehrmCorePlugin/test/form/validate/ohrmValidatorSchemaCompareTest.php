@@ -22,7 +22,7 @@
  * Test class ohrmValidatorSchemaCompare
  * @group core
  */
-class ohrmValidatorSchemaCompareTest extends PHPUnit_Framework_TestCase {
+class ohrmValidatorSchemaCompareTest extends PHPUnit\Framework\TestCase {
     
     public function testDoClean() {
         

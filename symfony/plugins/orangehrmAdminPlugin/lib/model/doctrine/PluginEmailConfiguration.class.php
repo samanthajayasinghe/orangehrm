@@ -14,7 +14,7 @@
  */
 abstract class PluginEmailConfiguration extends BaseEmailConfiguration
 {
-    public function setUp() {
+    public function setup(): void {
         parent::setup();
         if (KeyHandler::keyExists()) {
             $key = KeyHandler::readKey();

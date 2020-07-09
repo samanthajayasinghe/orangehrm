@@ -21,13 +21,13 @@
 /**
  * @group Leave 
  */
-class HolidayServiceTest extends PHPUnit_Framework_TestCase {
+class HolidayServiceTest extends PHPUnit\Framework\TestCase {
 
     private $holidayService;
     private $fixture;
 
 
-    protected function setUp() {
+    protected function setUp() :void {
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/HolidayService.yml';
         $this->holidayService	=	new HolidayService();
     }

@@ -18,12 +18,8 @@
  */
 class orangehrmAdminPluginAllTests {
 
-    protected function setUp() {
-
-    }
-
     public static function suite() {
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmCoreLeavePluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmCoreLeavePluginAllTest');
 
         /* Dao Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/SystemUserDaoTest.php');
@@ -73,7 +69,7 @@ class orangehrmAdminPluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

@@ -22,14 +22,14 @@
 /**
  * Description of EmailDaoTest
  */
-class EmailDaoTest extends PHPUnit_Framework_TestCase {
+class EmailDaoTest extends PHPUnit\Framework\TestCase {
 
     private $emailDao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->emailDao = new EmailDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/EmailDao.yml';
         TestDataService::populate($this->fixture);

@@ -10,7 +10,7 @@
  *
  * @group Core
  */
-class SimpleUserRoleFactoryTest extends PHPUnit_Framework_TestCase {
+class SimpleUserRoleFactoryTest extends PHPUnit\Framework\TestCase {
 
     /* Test decorateUserRole() method.
      * Testcase for the senario where the user is an Admin and not a Ess User.

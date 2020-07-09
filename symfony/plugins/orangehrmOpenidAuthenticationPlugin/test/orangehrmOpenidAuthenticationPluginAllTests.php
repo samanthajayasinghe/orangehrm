@@ -2,13 +2,13 @@
 
 class orangehrmOpenidAuthenticationPluginAllTests {
 
-    protected function setUp() {
+    protected function setUp() :void {
         
     }
 
     public static function suite() {
 
-        $suite = new PHPUnit_Framework_TestSuite('orangehrmOpenidAuthenticationPluginAllTest');
+        $suite = new PHPUnit\Framework\TestSuite('orangehrmOpenidAuthenticationPluginAllTest');
 
         /* Dao Test Cases */
         $suite->addTestFile(dirname(__FILE__) . '/model/dao/OpenIdAuthenticationDaoTest.php');
@@ -31,7 +31,7 @@ class orangehrmOpenidAuthenticationPluginAllTests {
     }
 
     public static function main() {
-        PHPUnit_TextUI_TestRunner::run(self::suite());
+        PHPUnit\TextUI\TestRunner::run(self::suite());
     }
 
 }

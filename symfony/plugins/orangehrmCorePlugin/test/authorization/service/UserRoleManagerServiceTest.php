@@ -23,7 +23,7 @@
  *
  * @group Core
  */
-class UserRoleManagerServiceTest extends PHPUnit_Framework_TestCase {
+class UserRoleManagerServiceTest extends PHPUnit\Framework\TestCase {
     
     /** @property UserRoleManagerService $service */
     private $service;
@@ -31,7 +31,7 @@ class UserRoleManagerServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->service = new UserRoleManagerService();
     }
     

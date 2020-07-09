@@ -20,10 +20,10 @@
 /**
  * Class APIManagerServiceTest
  */
-class APIManagerServiceTest extends PHPUnit_Framework_TestCase
+class APIManagerServiceTest extends PHPUnit\Framework\TestCase
 {
 
-    public function setUp()
+    public function setup(): void
     {
 
     }

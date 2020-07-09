@@ -21,7 +21,7 @@
  * Class AuthenticateVerifyServiceTest
  * @group maintenance
  */
-class MaintenanceServiceTest extends PHPUnit_Framework_TestCase
+class MaintenanceServiceTest extends PHPUnit\Framework\TestCase
 {
     protected $fixture;
     private $maintenanceService;
@@ -29,7 +29,7 @@ class MaintenanceServiceTest extends PHPUnit_Framework_TestCase
     /**
      *
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $this->maintenanceService = new MaintenanceService();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmMaintenancePlugin/test/fixtures/EmployeeDaoWithDeletedEmployee.yml';

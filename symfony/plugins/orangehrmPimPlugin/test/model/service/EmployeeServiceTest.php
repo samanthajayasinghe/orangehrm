@@ -20,7 +20,7 @@
 /**
  * @group Pim
  */
-class EmployeeServiceTest extends PHPUnit_Framework_TestCase {
+class EmployeeServiceTest extends PHPUnit\Framework\TestCase {
 
     private $testCase;
     private $employeeDao;
@@ -30,7 +30,7 @@ class EmployeeServiceTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
         $this->testCase = sfYaml::load(sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/employee.yml');
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmPimPlugin/test/fixtures/EmployeeDao.yml';
         $this->employeeService = new EmployeeService();

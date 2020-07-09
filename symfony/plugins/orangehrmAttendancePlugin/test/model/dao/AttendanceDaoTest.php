@@ -21,14 +21,14 @@
 /**
  *  @group Attendance
  */
-class AttendanceDaoTest extends PHPUnit_Framework_TestCase {
+class AttendanceDaoTest extends PHPUnit\Framework\TestCase {
 
     private $attendanceDao;
 
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->attendanceDao = new AttendanceDao();    
         TestDataService::truncateSpecificTables(array('AttendanceRecord','Employee'));

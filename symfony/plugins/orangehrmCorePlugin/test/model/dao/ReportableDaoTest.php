@@ -21,13 +21,13 @@
 /**
  * @group Core
  */
-class ReportableDaoTest extends PHPUnit_Framework_TestCase {
+class ReportableDaoTest extends PHPUnit\Framework\TestCase {
 
     private $reportableDao;
 
     /* Set up method */
 
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->reportableDao = new ReportableDao();
         TestDataService::truncateTables(array('SelectedCompositeDisplayField','CompositeDisplayField','DisplayField', 'SelectedGroupField', 'GroupField', 'SelectedDisplayField', 'SelectedFilterField', 'FilterField', 'Report', 'ReportGroup', 'ProjectActivity', 'Project', 'Customer'));

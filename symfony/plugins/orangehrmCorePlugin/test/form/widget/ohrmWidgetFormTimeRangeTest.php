@@ -22,11 +22,11 @@
  * Test case for ohrmWidgetFormTimeRangeTest
  * @group core
  */
-class ohrmWidgetFormTimeRangeTest extends PHPUnit_Framework_TestCase {
+class ohrmWidgetFormTimeRangeTest extends PHPUnit\Framework\TestCase {
     
     private $widget;
     
-    public function setup() {
+    public function setup(): void {
 
         $this->widget = new ohrmWidgetFormTimeRange(array(
             'from_time' => '',

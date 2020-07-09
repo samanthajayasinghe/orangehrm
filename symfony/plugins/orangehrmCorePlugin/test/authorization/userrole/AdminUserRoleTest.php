@@ -22,7 +22,7 @@
  * Description of AdminUserRoleTest
  * @group Core
  */
-class AdminUserRoleTest extends PHPUnit_Framework_TestCase {
+class AdminUserRoleTest extends PHPUnit\Framework\TestCase {
 
     /** @property AdminUserRole $adminUserRole */
     private $adminUserRole;
@@ -30,7 +30,7 @@ class AdminUserRoleTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 //        $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/UserRole.yml';
 //        TestDataService::truncateSpecificTables(array('SystemUser'));
 //        TestDataService::populate($this->fixture);

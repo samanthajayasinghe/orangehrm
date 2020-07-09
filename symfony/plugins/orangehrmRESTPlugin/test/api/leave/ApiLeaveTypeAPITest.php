@@ -29,7 +29,7 @@ use Orangehrm\Rest\Api\Leave\Entity\LeaveType;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiLeaveTypeAPITest extends PHPUnit_Framework_TestCase
+class ApiLeaveTypeAPITest extends PHPUnit\Framework\TestCase
 {
     private $leaveTypeApi;
 
@@ -37,7 +37,7 @@ class ApiLeaveTypeAPITest extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

@@ -11,11 +11,11 @@
  *
  * @group beacon
  */
-class CountDataPointProcessorTest extends PHPUnit_Framework_TestCase {
+class CountDataPointProcessorTest extends PHPUnit\Framework\TestCase {
 
     private $datapoints;
 
-    protected function setUp() {
+    protected function setUp() :void {
         $this->datapoints = sfYaml::load(sfConfig::get('sf_plugins_dir') . '/orangehrmBeaconPlugin/test/fixtures/BeaconDatapointDao.yml');
     }
 

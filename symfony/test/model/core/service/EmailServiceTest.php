@@ -1,13 +1,13 @@
 <?php
 
 
-class EmailServiceTest extends PHPUnit_Framework_TestCase{
+class EmailServiceTest extends PHPUnit\Framework\TestCase{
 	
 	private $mailService;	
 	/**
      * PHPUnit setup function
      */
-    public function setup() {
+    public function setup(): void {
     	$this->mailService = new EmailService();	
     }
     

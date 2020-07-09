@@ -26,13 +26,13 @@
 use Orangehrm\Rest\Api\Pim\Entity\EmployeeCustomField;
 
 
-class ApiEmployeeCustomFieldTest extends PHPUnit_Framework_TestCase
+class ApiEmployeeCustomFieldTest extends PHPUnit\Framework\TestCase
 {
 
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
 
     }

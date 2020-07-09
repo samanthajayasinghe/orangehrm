@@ -14,9 +14,9 @@
 /**
  * @group performance
  */
-class KpiDaoTest extends PHPUnit_Framework_TestCase {
+class KpiDaoTest extends PHPUnit\Framework\TestCase {
 
-    protected function setUp() {
+    protected function setUp() :void {
         TestDataService::truncateTables(array('Kpi'));
         TestDataService::populate(sfConfig::get('sf_plugins_dir') . '/orangehrmPerformancePlugin/test/fixtures/kpi.yml');
     }

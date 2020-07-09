@@ -24,7 +24,7 @@ require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 /**
  * @group Core
  */
-class BaseServiceDataTest extends PHPUnit_Framework_TestCase {
+class BaseServiceDataTest extends PHPUnit\Framework\TestCase {
 
     protected static $baseService;
     protected static$fixture;
@@ -33,7 +33,7 @@ class BaseServiceDataTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    public static function setUpBeforeClass() {
+    public static function setupBeforeClass():void {
 
         self::$baseService = new BaseService();
         $sampleQueryExtensionsPath = sfConfig::get('sf_plugins_dir') . '/orangehrmCorePlugin/test/fixtures/sample_query_extensions.yml';

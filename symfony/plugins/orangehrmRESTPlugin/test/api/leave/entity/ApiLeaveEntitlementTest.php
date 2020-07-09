@@ -26,7 +26,7 @@
 use Orangehrm\Rest\Api\Leave\Entity\LeaveEntitlement;
 
 
-class ApiLeaveEntitlementTest extends PHPUnit_Framework_TestCase
+class ApiLeaveEntitlementTest extends PHPUnit\Framework\TestCase
 {
 
     public function testToArray(){

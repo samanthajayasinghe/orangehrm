@@ -23,7 +23,7 @@
  * Description of LeaveTypeDaoTest
  * @group Leave
  */
-class LeaveTypeDaoTest extends PHPUnit_Framework_TestCase {
+class LeaveTypeDaoTest extends PHPUnit\Framework\TestCase {
 
     /**
      * @var LeaveTypeDao 
@@ -34,7 +34,7 @@ class LeaveTypeDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->dao = new LeaveTypeDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmLeavePlugin/test/fixtures/LeaveType.yml';

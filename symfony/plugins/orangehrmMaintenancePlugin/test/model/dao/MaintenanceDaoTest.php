@@ -21,7 +21,7 @@
  * Class MaintenanceDaoTest
  * @group maintenance
  */
-class MaintenanceDaoTest extends PHPUnit_Framework_TestCase
+class MaintenanceDaoTest extends PHPUnit\Framework\TestCase
 {
 
     protected $fixture = null;
@@ -31,7 +31,7 @@ class MaintenanceDaoTest extends PHPUnit_Framework_TestCase
     /**
      * Set up method
      */
-    protected function setUp()
+    protected function setUp() :void
     {
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmMaintenancePlugin/test/fixtures/EmployeeDaoWithDeletedEmployee.yml';
         TestDataService::populate($this->fixture);

@@ -29,10 +29,10 @@ use Orangehrm\Rest\Api\Pim\Entity\Employee;
 use Orangehrm\Rest\Http\Request;
 use Orangehrm\Rest\Http\Response;
 
-class ApiEmployeeTerminateAPITest extends PHPUnit_Framework_TestCase
+class ApiEmployeeTerminateAPITest extends PHPUnit\Framework\TestCase
 {
 
-    protected function setUp()
+    protected function setUp() :void
     {
         $sfEvent   = new sfEventDispatcher();
         $sfRequest = new sfWebRequest($sfEvent);

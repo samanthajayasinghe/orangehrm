@@ -19,14 +19,14 @@
  */
 use Orangehrm\Rest\Http\Response;
 
-class HttpResponseTest extends PHPUnit_Framework_TestCase{
+class HttpResponseTest extends PHPUnit\Framework\TestCase{
 
     /**
      * @var Response
      */
     private $response = null;
 
-    protected function setUp() {
+    protected function setUp() :void {
         $this->response = new Response(array(array('name'=>'Samantha')));
     }
 

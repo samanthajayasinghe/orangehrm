@@ -19,7 +19,7 @@
  */
 require_once sfConfig::get('sf_test_dir') . '/util/TestDataService.php';
 
-class EmailNotificationDaoTest extends PHPUnit_Framework_TestCase {
+class EmailNotificationDaoTest extends PHPUnit\Framework\TestCase {
 
     private $emailNotificationDao;
     protected $fixture;
@@ -27,7 +27,7 @@ class EmailNotificationDaoTest extends PHPUnit_Framework_TestCase {
     /**
      * Set up method
      */
-    protected function setUp() {
+    protected function setUp() :void {
 
         $this->emailNotificationDao = new EmailNotificationDao();
         $this->fixture = sfConfig::get('sf_plugins_dir') . '/orangehrmAdminPlugin/test/fixtures/EmailNotificationDao.yml';

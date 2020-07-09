@@ -1,12 +1,12 @@
 <?php
 
 
-class EncryptionListenerTest extends PHPUnit_Framework_TestCase {
+class EncryptionListenerTest extends PHPUnit\Framework\TestCase {
 
     private $key1;
     private $key2;
 
-    public function setup() {
+    public function setup(): void {
 
         $this->key1 = '31fae626564189808b80f3fc06e58e5f0b6c64ddac1bc8ad298d8123229628421062b42e9e3304d5c554b94f5e32a88a72e4cbed76d9ac5c6c9dabc1d8db72d4';
         $this->key2 = '31fae626564184892ea403fc44448e52226c64dda44bc1aa298d81232291283314624424943404d4444444444444444444444444444444444c9dabc1d8db72d4';
